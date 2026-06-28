@@ -1,16 +1,33 @@
 body {
+background-color: #7cc0f5;
+display: flex;
+flex-direction: column;
+align-items: center;
 text-align: center;
+padding: 20px;
 font-family: Arial;
 }
 #board {
 display: grid;
-grid-template-columns: repeat(9, 1fr);
+grid-template-columns: repeat(9, 50px);
 margin: auto;
+border: 3px solid #333;
 max-width: fit-content;
 }
 input {
 width: 50px;
 height: 50px;
 text-align: center;
+border: 0.5px solid #ccc;
 font-size: 25px;
+}
+input:read-only {
+    background-color: grey;
+    color: #333;
+    font-weight: bold;
+}
+button {
+    margin: 10px 10px;
+    padding: 8px 15px;
+    cursor: pointer;
 }
